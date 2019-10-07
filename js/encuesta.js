@@ -170,7 +170,7 @@ function xLoadPreuguntas() {
 	$.ajax({
 		url: './bdphp/log_003.php?op=0',
 		type: 'POST',
-		data: 
+		data: _data_o
 	})
 	.done((res) => {
 		LaEncuesta = JSON.parse(res);
