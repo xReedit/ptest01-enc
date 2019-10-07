@@ -93,6 +93,7 @@ function getDataO() {
 			var xLiEncuesta = '';
 			if (listEncuestas.length === 1) {
 				xIdEncuesta = listEncuestas[0].idencuesta_sede_conf;
+				_data_o.e = xIdEncuesta;
 				xShowVista();
 			} else {
 				// opcion seleccionar encuesta
@@ -169,7 +170,7 @@ function xLoadPreuguntas() {
 	$.ajax({
 		url: './bdphp/log_003.php?op=0',
 		type: 'POST',
-		data: _data_o
+		data: 
 	})
 	.done((res) => {
 		LaEncuesta = JSON.parse(res);
